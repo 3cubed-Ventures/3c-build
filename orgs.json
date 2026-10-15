@@ -1,0 +1,26 @@
+[
+  {
+    "login": "3cubed-Ventures",
+    "name": "3cubed Ventures",
+    "description": "Seed & Early-Stage VC",
+    "url": "https://github.com/3cubed-Ventures",
+    "websiteUrl": "www.3cubed.vc",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/188116216?v=4"
+  },
+  {
+    "login": "EU27-data-sovereignty",
+    "name": "EU27-data-sovereignty",
+    "description": "A plan to help the 27 nations of the EU to become data-sovereign",
+    "url": "https://github.com/EU27-data-sovereignty",
+    "websiteUrl": "https://eu27.cloud/",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/338878130?v=4"
+  },
+  {
+    "login": "Mockingbyrd-io",
+    "name": "Mockingbyrd",
+    "description": "A firewall for the AI agents on your Mac",
+    "url": "https://github.com/Mockingbyrd-io",
+    "websiteUrl": "https://mockingbyrd.io",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/336283081?v=4"
+  }
+]
