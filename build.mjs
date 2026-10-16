@@ -62,7 +62,7 @@ function page(orgs, updated) {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>3C Build · Organizations</title>
+<title>3C BUILD · Organizations</title>
 <meta name="description" content="Organizations in the 3C Build enterprise.">
 <link rel="icon" href="assets/3C_Build.png">
 <style>
@@ -70,12 +70,13 @@ function page(orgs, updated) {
   @media (prefers-color-scheme: dark) {
     :root { --bg:#0b0c0e; --card:#15171a; --fg:#eef0f2; --muted:#9aa1aa; --line:#272a2f; --link:#7ab4ff; }
   }
+  @font-face { font-family: "Good Times"; src: url("assets/good-times-rg.ttf") format("truetype"); font-display: swap; }
   * { box-sizing: border-box; }
   body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif; }
   main { max-width: 960px; margin: 0 auto; padding: 48px 16px 64px; }
   header { text-align:center; margin-bottom: 40px; }
   header img { width: 160px; height: 160px; border-radius: 12px; }
-  h1 { margin: 20px 0 4px; font-size: 28px; letter-spacing: .02em; }
+  h1 { margin: 20px 0 4px; font: 400 30px/1.2 "Good Times", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: .04em; }
   header p { margin:0; color:var(--muted); }
   ul { list-style:none; margin:0; padding:0; display:grid; gap:16px; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
   .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:20px; display:flex; flex-direction:column; gap:10px; }
@@ -95,7 +96,7 @@ function page(orgs, updated) {
 <main>
   <header>
     <img src="assets/3C_Build.png" alt="3C Build">
-    <h1>3C Build</h1>
+    <h1>3C BUILD</h1>
     <p>${orgs.length} organization${orgs.length === 1 ? "" : "s"}</p>
   </header>
   <ul>
