@@ -118,7 +118,17 @@ if (TOKEN) {
   orgs = JSON.parse(await readFile("orgs.json", "utf8"));
   console.log(`ENTERPRISE_TOKEN not set; using ${orgs.length} organizations from orgs.json`);
 }
-orgs.sort((a, b) => (a.name || a.login).localeCompare(b.name || b.login, "en", { sensitivity: "base" }));
+// Orgs listed here come first, in this order; any others follow alphabetically.
+const PINNED = ["3cubed-Ventures", "Mockingbyrd-io", "EU27-data-sovereignty"].map((l) => l.toLowerCase());
+const rank = (o) => {
+  const i = PINNED.indexOf(o.login.toLowerCase());
+  return i === -1 ? PINNED.length : i;
+};
+orgs.sort(
+  (a, b) =>
+    rank(a) - rank(b) ||
+    (a.name || a.login).localeCompare(b.name || b.login, "en", { sensitivity: "base" }),
+);
 
 await rm("dist", { recursive: true, force: true });
 await mkdir("dist");
