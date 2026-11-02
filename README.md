@@ -1,8 +1,8 @@
-<p align="center"><img src="assets/3C_Build.png" alt="3C Build" width="160"></p>
+<p align="center"><img src="assets/3C_Build.png" alt="3CBUILD" width="160"></p>
 
-# 3C Build organizations
+# 3CBUILD organizations
 
-Public directory of the organizations in the [3C Build](https://github.com/enterprises/3c-build) GitHub enterprise, published at https://3cubed-ventures.github.io/3c-build/.
+Public directory of the organizations in the [3CBUILD](https://github.com/enterprises/3c-build) GitHub enterprise, published at https://3cubed-ventures.github.io/3c-build/.
 
 ## How it updates
 
